@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<style>
+        .back-to-home-container {
+            position: absolute; /* Position it absolutely */
+            top: 20px; /* Align to top */
+            left: 20px; /* Align to left */
+            background-color: #f8f9fa; /* Light background color */
+            padding: 10px; /* Padding inside the box */
+            border-radius: 5px; /* Rounded corners */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+        }
+        .back-to-home {
+            text-decoration: none; /* No underline */
+            color: #007bff; /* Blue text color */
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Playable Piano Javascript</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="script.js" defer></script>
+</head>
+<body>
+<div class="back-to-home-container">
+        <a href="../index.html" class="back-to-home">&larr; Back to Home</a>
+    </div>
+    <div class="wrapper">
+        <header>
+            <h2>Playable PIANO</h2>
+            <div class="column volume-slider">
+            <span>Volume</span><input type="range" min="0" max="1" value="0.5" step="any">
+            </div>
+            <div class="column keys-checkbox">
+                <span>Show Keys</span><input type="checkbox" checked>                
+                </div>
+        </header>
+        <ul class="piano-keys">
+            <li class="key white" data-key="a" aria-label="C key"><span>a</span></li>
+            <li class="key black" data-key="w" aria-label="C# key"><span>w</span></li>
+            <li class="key white" data-key="s" aria-label="D key"><span>s</span></li>
+            <li class="key black" data-key="e" aria-label="D# key"><span>e</span></li>
+            <li class="key white" data-key="d" aria-label="E key"><span>d</span></li>
+            <li class="key white" data-key="f" aria-label="F key"><span>f</span></li>
+            <li class="key black" data-key="t" aria-label="F# key"><span>t</span></li>
+            <li class="key white" data-key="g" aria-label="G key"><span>g</span></li>
+            <li class="key black" data-key="y" aria-label="G# key"><span>y</span></li>
+            <li class="key white" data-key="h" aria-label="A key"><span>h</span></li>
+            <li class="key black" data-key="u" aria-label="A# key"><span>u</span></li>
+            <li class="key white" data-key="j" aria-label="B key"><span>j</span></li>
+            <li class="key white" data-key="k" aria-label="C key"><span>k</span></li>
+            <li class="key black" data-key="o" aria-label="C# key"><span>o</span></li>
+            <li class="key white" data-key="l" aria-label="D key"><span>l</span></li>
+            <li class="key black" data-key="p" aria-label="D# key"><span>p</span></li>
+            <li class="key white" data-key=";" aria-label="E key"><span>;</span></li>
+        </ul>
+    </div>
+</body>
+</html>
